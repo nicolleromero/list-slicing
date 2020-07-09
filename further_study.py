@@ -115,6 +115,8 @@ def custom_remove(input_list, value):
 
     """
 
+    input_list[0:1] = []
+
     pass
 
 
