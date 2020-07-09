@@ -250,7 +250,17 @@ def custom_equality(some_list, another_list):
 
     """
 
-    return None
+    if custom_len(some_list) != custom_len(another_list):
+        return False
+
+    for i in range(custom_len(some_list)):
+        if some_list[i] == another_list[i]:
+            result = True
+        else:
+            return False
+
+    return result
+
 
 
 # This is the part were we actually run the doctests.
