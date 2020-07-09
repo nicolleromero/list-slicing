@@ -120,7 +120,10 @@ def inner_four_end(input_list):
 
     """
 
-    return []
+    start = len(input_list) - 6 
+    end = len(input_list) - 2
+
+    return input_list[start: end]
 
 
 def replace_head(input_list):
