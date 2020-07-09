@@ -199,6 +199,13 @@ def custom_reverse(input_list):
         True
 
     """
+    copy = input_list[:]
+
+    length = custom_len(copy)
+
+    for i in range(length):
+        input_list[i] = copy[length - i - 1]
+
 
     pass
 
